@@ -1,0 +1,20 @@
+.kt_generic_title_container {
+  padding: 0px 7px 0px 7px;
+}
+.kt_generic_btn_container {
+  padding: 7px 7px 7px 7px !important;
+  margin: 0;
+}
+
+.kt_generic_container {
+  padding: 0;
+  min-width: 250px;
+  margin: 10px;
+}
+.kt_generic_master_container {
+  display: flex;
+  overflow-x: auto;
+}
+// .kt_generic_master_container::-webkit-scrollbar {
+//   display: none;
+// }

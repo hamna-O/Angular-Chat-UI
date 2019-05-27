@@ -1,0 +1,28 @@
+.kt_text {
+  // min-width: 40%;
+  height: 10px;
+  font-size: 14px;
+  padding-top: 10px;
+  margin: 5px;
+  // background-color:whitesmoke;
+  border-radius: 20px;
+  // border:1px solid #3f51b5;
+  // position: absolute;
+  color: #3f51b5;
+}
+
+.kt_parent_bot {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.chip_img {
+  height: 10px;
+  width: 10px;
+  padding-right: 2px;
+}
+
+.mat_width {
+  min-width: 200px;
+  max-width: fit-content;
+}

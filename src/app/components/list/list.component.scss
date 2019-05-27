@@ -1,0 +1,29 @@
+
+.kt_sub_title_list {
+  margin: 0;
+  font-size: 11px;
+  color: grey;
+}
+h5 {
+  margin: 0;
+}
+
+.mat-list-item {
+  height: unset !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.424);
+  padding: 3px;
+}
+
+.kt_list_item {
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 7px;
+ }
+
+ .kt_list_item_btn {
+    margin-top: 3px;
+    border: none;
+    background: none;
+    box-shadow: 0px 0px 1px 1px #4a72e4;
+    color: blue;
+ }

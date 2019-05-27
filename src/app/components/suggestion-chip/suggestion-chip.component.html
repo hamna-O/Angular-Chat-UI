@@ -1,0 +1,16 @@
+<div>
+    <!-- <mat-card class="kt_text" *ngIf="suggestion_chips?.text">
+      {{suggestion_chips.text}}
+    </mat-card> -->
+    <div class="kt_parent_bot">
+      <mat-card class="kt_text" *ngIf="suggestion_chips?.text">
+        {{suggestion_chips.text}}
+      </mat-card>
+  </div>
+    <mat-chip-list [ngClass]="{'mat-chip-list-stacked': suggestion_chips.type == 'vertical'}"  [multiple]="false" [selectable]="true"  #chipList>
+        <mat-chip [ngClass]="{'mat_width': suggestion_chips.type == 'vertical'}" (click)="onChipChange(chip.value)" [selected]="selectedChip==chip.value" *ngFor="let chip of suggestion_chips.suggestions">
+          <img class="chip_img" src="{{chip.imageUrl}}" alt="">
+          {{chip.value}}
+        </mat-chip>
+      </mat-chip-list>
+</div>

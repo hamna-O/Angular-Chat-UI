@@ -1,0 +1,32 @@
+<div>
+  <div [ngSwitch]="messageCase">
+    <div *ngSwitchCase=1>
+      <kit-text [dialog]="'Hi, this is a test dialogue'" [author]="'user'"></kit-text>
+      <kit-text [dialog]="'Hi, this is a test dialogue'" [author]="'bot'"></kit-text>
+    </div>
+    <div *ngSwitchCase=2>
+      <kit-image></kit-image>
+    </div>
+    <div *ngSwitchCase=3>
+      quick replies
+    </div>
+    <div *ngSwitchCase=4>
+     <kit-generic></kit-generic>
+    </div>
+    <div *ngSwitchCase=5>
+       <kit-list></kit-list>
+      </div>
+    <div *ngSwitchCase=6>
+        <kit-suggestion-chip [suggestion_chips]="chips"></kit-suggestion-chip>
+    </div>
+    <div *ngSwitchDefault>
+  
+    </div>
+  </div>
+</div>
+<div>
+  <div class="chatbox">
+    <input type="text">
+    <i class="fas fa-paper-plane"></i>
+  </div>
+</div>

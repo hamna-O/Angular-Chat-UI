@@ -1,0 +1,26 @@
+.chatbox {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  box-shadow: 3px 1px 5px 1px #dad3d3;
+}
+
+.chatbox>input, .chatbox>input:focus {
+  flex-grow: 1;
+  border: none;
+  padding: 7px;
+  outline: none;
+}
+
+.chatbox > i {
+  align-self: center;
+  padding: 5px;
+  font-size: 21px;
+  color: grey;
+  cursor: pointer;
+}

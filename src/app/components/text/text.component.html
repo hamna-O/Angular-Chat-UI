@@ -1,0 +1,5 @@
+<div [ngClass]="{'kt_parent_user': (author == 'user'), 'kt_parent_bot': (author == 'bot')}">
+    <mat-card [ngClass]="{'kt_text_user': (author == 'user'), 'kt_text': true, 'kt_text_bot': (author == 'bot')}">
+        {{dialog}}
+      </mat-card>
+</div>

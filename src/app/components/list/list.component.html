@@ -1,0 +1,21 @@
+<div>
+  <mat-card style="padding:0px">
+      <mat-list>
+          <mat-list-item *ngFor="let item of list.Lists">
+            <div class="kt_list_item">
+                <div>
+                    <h5 *ngIf="item.title">{{item.title}}</h5>
+                    <p *ngIf="item.subtitle" class="kt_sub_title_list">
+                      {{item.subtitle}}
+                    </p>
+                    <input *ngIf="item.button" class="kt_list_item_btn" (click)="onItemView(item.button.value)" type="button" value="{{item.button.title}}">
+                  </div>
+                  <div *ngIf="item.imageUrl" class="kt_img_list">
+                    <img matListAvatar   src="{{item.imageUrl}}" alt="...">
+                  </div>
+            </div>
+          </mat-list-item>
+        </mat-list>
+  </mat-card>
+  
+</div>
